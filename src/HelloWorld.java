@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello World!");
@@ -18,9 +20,10 @@ public class HelloWorld {
 
         int x = 10;
         int y = 2;
-        x = x / y;
-        y = y - x;
-        System.out.println(x);
+//        x = x / y;
+//        y = y - x;
+//        System.out.println(x);
+        y -= (x/y);
         System.out.println(y);
     }
 }
