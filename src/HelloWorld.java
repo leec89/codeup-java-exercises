@@ -16,7 +16,7 @@ public class HelloWorld {
 
         System.out.println(weight);
 
-        System.out.println("Sherman is a " + breed);
+        System.out.println("Sherman is a " + breed + " and weighs " + weight + "lbs");
 
         int x = 10;
         int y = 2;
