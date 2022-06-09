@@ -16,5 +16,6 @@ public class Bob {
             System.out.println(response);
             Scanner reply = new Scanner(System.in);
 
+        }
     }
 }
