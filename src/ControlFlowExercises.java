@@ -43,40 +43,60 @@ public class ControlFlowExercises {
 
         // 3. Display a table of powers
 
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("What number would you like to go up to? ");
-//        String limit = scanner.nextLine();                              // user input is the limit - string
-//        int limitNum = Integer.parseInt(limit);                         // turn limit into a number
-//        System.out.println();                                           // line return for spacing
-//        System.out.println("Here is your table");                       // begin table header info
-//        System.out.println();
-//        System.out.println("number | squared | cubed");
-//        System.out.println("------ | ------- | -----");
-//        for (int i = 1; i <= limitNum; i++) {                           // for loop to print out table body
-//            int number = i;
-//            int squared = i * i;
-//            int cubed = i * i * i;
-//        System.out.format("%-6d | %-7d | %-5d%n", number, squared, cubed);  // This took the longest to develop
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What number would you like to go up to? ");
+        String limit = scanner.nextLine();                              // user input is the limit - string
+        int limitNum = Integer.parseInt(limit);                         // turn limit into a number
+        System.out.println();                                           // line return for spacing
+        System.out.println("Here is your table");                       // begin table header info
+        System.out.println();
+        System.out.println("number | squared | cubed");
+        System.out.println("------ | ------- | -----");
+        for (int i = 1; i <= limitNum; i++) {                           // for loop to print out table body
+            int number = i;
+            int squared = i * i;
+            int cubed = i * i * i;
+        System.out.format("%-6d | %-7d | %-5d%n", number, squared, cubed);  // This took the longest to develop
         }
 
         // 4. Convert given number grades into letter grades.
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("What is the grade to be evaluated? %n");
-        String grade = scanner.nextLine();
-        int gradeNum = Integer.parseInt(grade);
-        System.out.print("Do you want to continue y/n? %n");
-        String answer = scanner.next();
-        boolean confirmation = userInput.equals("y")
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.printf("What is the grade to be evaluated? %n");
+//        String grade = scanner.nextLine();
+//        int gradeNum = Integer.parseInt(grade);
+//        System.out.printf("Do you want to continue y/n? %n");
+//        String answer = scanner.next();
+//        boolean confirmation = answer.equals("y");
 //        do {
-            if (answer = "y") {
-                System.out.println("Great");
-            }
-
-//        } while (answer == "y");
-
-
-
+//            if (confirmation) {
+//                System.out.println("Great");
+//            }
+//            if(gradeNum < 0 || gradeNum > 100) {
+//                System.out.println("Invalid score");
+//            }
+//            switch(gradeNum > 0 && gradeNum < 100) {
+//
+//                case (gradeNum <= 100 || gradeNum >= 88):
+//                    System.out.println("A");
+//
+//                case (gradeNum <= 87 || gradeNum >= 80):
+//                    System.out.println("B");
+//
+//                case (gradeNum <= 79 || gradeNum >= 67):
+//                    System.out.println("C");
+//
+//                case (gradeNum <= 66 || gradeNum >= 60):
+//                    System.out.println("D");
+//
+//                case (gradeNum <= 59 || gradeNum >= 0):
+//                    System.out.println("F");
+//            }
+//            System.out.printf("Do you want to continue y/n? %n");
+//            String answer = scanner.next();
+//            boolean confirmation = answer.equals("y");
+//
+//        } while (confirmation);
 
     }
 }
