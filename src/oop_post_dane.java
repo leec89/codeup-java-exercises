@@ -1,17 +1,17 @@
-public class oop_dane {
+public class oop_post_dane {
 
-    public String title;
-    public String author;
-    public String creationDate;
-    public String body;
+    private String title;
+    private String author;
+    private String creationDate;
+    private String body;
 
     static long totalPosts;
 
-    public Post() {
+    public oop_post_dane() {
         totalPosts++;
     }
 
-    public Post(String title, String author, String creationDate, String body) {
+    public oop_post_dane(String title, String author, String creationDate, String body) {
         this();
         this.title = title;
         this.author = author;
@@ -26,10 +26,39 @@ public class oop_dane {
                 " \n body:  "+ this.body + " \n";
     }
 
-
     public static long getTotalPosts() {
         return totalPosts;
     }
 
+    public String getTitle() {
+        return title;
+    }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(String creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
 }
