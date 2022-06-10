@@ -124,19 +124,17 @@ public class MethodsExercises {
 //        String again = "y";                                                 // set again to "y" for while loop
 //        while (again.toLowerCase().equals("y")) {
 //
-//
 //            Scanner scanner = new Scanner(System.in);                       // get user input on num sides of each die
 //            System.out.print("For your pair of dice, how many sides do you want per die?: ");
 //            String userInput = scanner.nextLine();
 //            int dieSides = Integer.parseInt(userInput);
-//
 //
 //            double diceRollOne = Math.floor(Math.random()*(dieSides-1+1)+1);    // calc die 1 roll
 //            System.out.println("First die rolled was " + (int)diceRollOne);
 //            double diceRollTwo = Math.floor(Math.random()*(dieSides-1+1)+1);    // calc die 2 roll
 //            System.out.println("First die rolled was " + (int)diceRollTwo);
 //            int answer = (int)diceRollOne + (int)diceRollTwo;                   // add the 2 rolls up
-//            System.out.println("You rolled a " + answer);
+//            System.out.println("You rolled a " + answer);                       // output rolls to screen
 //
 //            System.out.print("Would you like to go again?(y/n): ");             // ask again to roll
 //            String goAgain = scanner.nextLine();
@@ -152,25 +150,20 @@ public class MethodsExercises {
         while (again.toLowerCase().equals("y")) {                           // outer while loop to operate highLow loop
 
             double computerRandom = Math.floor(Math.random() * (100 - 1 + 1) + 1);    // random number between 1-100
-            System.out.println("Random number is " + (int) computerRandom);
+//            System.out.println("Random number is " + (int) computerRandom);
 
             System.out.println("You have to guess a number between 1-100. You have 7 guesses.");
             System.out.println();
-
-
 
             String incorrect = "y";
             int guessedNum;                                                 // create "guessedNum" variable outside of while loop
             int guessCount = 1;                                             // create "guessCount" variable to track number of guesses
             while (incorrect.equals("y")) {                                 // inner while loop to run number guessing
 
-
-
                 Scanner scanner = new Scanner(System.in);                       // get user input on guessed number
                 System.out.print("Guess # " + guessCount + " - What is the number you guess?: ");
                 String userInput = scanner.nextLine();
                 guessedNum = Integer.parseInt(userInput);                       // user input is "guessedNum"
-
 
                 if (guessedNum < computerRandom) {                              // if too low
                     System.out.println("Sorry, too LOW!");
