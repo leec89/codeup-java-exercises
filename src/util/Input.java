@@ -49,9 +49,33 @@ public class Input {
         }
         String message = "Hiya";
         System.out.println(message);
-
         return answerInt;
     }
 
+    public int getInt(){
+        System.out.println("Please enter an Integer value: ");
+        int userInputNum = scanner.nextInt();
+        System.out.println("You entered " + userInputNum + " - thank you!");
+        return userInputNum;
+    }
+
+    public double getDouble(double min, double max) {
+        boolean inMinMaxRange = false;
+        double answerInt = 0;
+        while (!inMinMaxRange) {
+            System.out.println("Please enter a value to check if in the Min Max Range: ");
+            double userInputNum = scanner.nextDouble();
+            if ((userInputNum >= min) && (userInputNum <= max)) {
+                System.out.println("Congratulations! Your value of " + userInputNum + " is between min: " + min + " and max: " + max + "!");
+                inMinMaxRange = true;
+                answerInt = userInputNum;
+            } else {
+                System.out.println("Sorry, your value is not within the Min Max Range. Try again!\n");
+            }
+        }
+        String message = "Hiya double";
+        System.out.println(message);
+        return answerInt;
+    }
 
 }
