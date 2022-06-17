@@ -20,6 +20,11 @@ public class Person {
         System.out.printf("Hello %s %n", name);
     }
 
+    public void sayHiya(){
+        //TODO: print a message to the console using the person's name
+        System.out.printf("Hiya %s %n", name);
+    }
+
     public Person() {};
 
     public static void main(String[] args) {
@@ -30,6 +35,11 @@ public class Person {
         person1.sayHello();
 
         System.out.printf("Hiya " + person1.getName());
+        System.out.println();
+
+        Person fred = new Person("Fred");
+        fred.sayHello();
+        fred.sayHiya();
 
         // 1b - Understanding references - first block
 //        Person person2 = new Person("John");

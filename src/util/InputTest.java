@@ -4,11 +4,11 @@ public class InputTest {
 
     public static void main(String[] args) {
 
-//        Input input = new Input()         //Javier showed in walkthru
-//        String userInput = input.getString();
-//        System.out.println(userInput.getString());
+//        Input input = new Input();         //Javier showed in walkthru
+//        String userInput = input.getString();       // goes to Input.java and runs getString() - returns userInput
+//        System.out.println(userInput);
 
-//        Input newString = new Input();
+//        Input newString = new Input();        //like above but shortcut with newString.getString()
 //        System.out.println(newString.getString());
 //
 //        Input newBoolean = new Input();
@@ -20,8 +20,8 @@ public class InputTest {
 //        Input newInt = new Input();
 //        System.out.println(newInt.getInt());
 
-        Input newDoubleMinMax = new Input();
-        System.out.println(newDoubleMinMax.getDouble(1.0,100.0));
+//        Input newDoubleMinMax = new Input();
+//        System.out.println(newDoubleMinMax.getDouble(1.0,100.0));
 
     }
 }
