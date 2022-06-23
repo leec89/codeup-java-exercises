@@ -1,9 +1,1 @@
-Athena
-Medusa
-Hades
-Aphrodite
-Artemis
-Ares
-Zeus
-Apollo
-Gaia
+Joe Doe 1234567

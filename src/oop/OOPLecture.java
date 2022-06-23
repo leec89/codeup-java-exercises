@@ -1,13 +1,15 @@
+package oop;
 
 public class OOPLecture {
     public static void main(String[] args) {
-        Post post = new Post();
-        Post post2 = post;
-//        System.out.println("post = " + post);
-        System.out.println("post2 = " + post2);
+
+        Post post = new Post();                     // creating a new Post named post
+        Post post2 = post;                          // creating post2 which references post
+
+        System.out.println("post2 = " + post2);     // this print and the next line should be the same
         System.out.println("post = " + post);
 
-        post2.author = "Justin";
+        post2.author = "Justin";                    // even though setting to post2, it does post
         System.out.println("post.author = " + post.author);
 
         Post post3 = new Post("book title","first Last","11/01/1987","yes!");
@@ -20,9 +22,9 @@ public class OOPLecture {
 
 
         // static method
-        System.out.println("Post.getTotalPosts() = " + Post.getTotalPosts());
+        System.out.println("oop.Post.getTotalPosts() = " + Post.getTotalPosts());
 
-        // Post.getTotalPosts()  == post3.getTotalPosts();
+        // oop.Post.getTotalPosts()  == post3.getTotalPosts();
 
 
     }

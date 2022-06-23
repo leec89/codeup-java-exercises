@@ -1,3 +1,5 @@
+package oop;
+
 public class oop_post_dane {
 
     private String title;

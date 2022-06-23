@@ -1,4 +1,4 @@
-
+package oop;
 
 public class oop_post_lecture {
     public static void main(String[] args) {
@@ -21,9 +21,9 @@ public class oop_post_lecture {
 
 
         // static method
-        System.out.println("Post.getTotalPosts() = " + oop_post_dane.getTotalPosts());
+        System.out.println("oop.Post.getTotalPosts() = " + oop_post_dane.getTotalPosts());
 
-        // Post.getTotalPosts()  == post3.getTotalPosts();
+        // oop.Post.getTotalPosts()  == post3.getTotalPosts();
 
 
     }

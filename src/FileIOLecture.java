@@ -6,6 +6,7 @@ import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class FileIOLecture {
     // File - a discrete container for data on a storage device.
@@ -53,21 +54,35 @@ public class FileIOLecture {
                 Files.createFile(dataFile);
             }
 
+            System.out.print("Please enter First Name: ");              // Ask first name
+            Scanner scannerFirstName = new Scanner(System.in);
+            String firstName = scannerFirstName.next();
+            System.out.print("Please enter Last Name: ");               // Ask last name
+            Scanner scannerLastName = new Scanner(System.in);
+            String lastName = scannerLastName.next();
+            System.out.print("Please enter Phone Number: ");            // Ask phone number
+            Scanner scannerPhoneNumber = new Scanner(System.in);
+            String phoneNumber = scannerPhoneNumber.next();
+            String contactLine = firstName + " " + lastName + " " + phoneNumber;
+            System.out.println(contactLine);
+
+
             List<String> dataText = new ArrayList<>();
-            dataText.add("Athena");
-            dataText.add("Medusa");
-            dataText.add("Hades");
-            dataText.add("Aphrodite");
-            dataText.add("Artemis");
-            dataText.add("Ares");
-            dataText.add("Zeus");
+//            dataText.add("Athena");
+//            dataText.add("Medusa");
+//            dataText.add("Hades");
+//            dataText.add("Aphrodite");
+//            dataText.add("Artemis");
+//            dataText.add("Ares");
+//            dataText.add("Zeus");
+//            dataText.add(contactLine);
             // Write to the file with the list of Greek names.
             if(Files.exists(dataFile)) {
                 // Files.write(Path path, List<> data)
                 System.out.println("Writing to info.txt file!");
                 Files.write(dataFile, dataText);
                 // Add a new name to the file.
-                Files.write(dataFile, Arrays.asList("Apollo", "Gaia"), StandardOpenOption.APPEND);
+                Files.write(dataFile, Arrays.asList(contactLine), StandardOpenOption.APPEND);
 
                 System.out.println(dataText);
             }
@@ -103,5 +118,7 @@ public class FileIOLecture {
         } catch( IOException iox) {
             iox.printStackTrace();
         }
+
+
     }
 }
